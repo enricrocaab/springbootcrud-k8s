@@ -19,8 +19,7 @@ metadata:
     tier: database
 type: Opaque
 data:
-  MYSQL_USER: cm9vdA==			# Base64 encoded 'root'
-  MYSQL_ROOT_PASSWORD: bXlzcWxwb3Nz	# Base64 encoded 'mysqlpass'
+  MYSQL_ROOT_PASSWORD: "bXlzcWxwYXNz" 	# Base64 encoded 'mysqlpass'
 ---
 # Define a 'Persistent Volume Claim'(PVC) for Mysql Storage, dynamically provisioned by cluster
 apiVersion: v1
@@ -70,12 +69,6 @@ spec:
                 configMapKeyRef:
                   name: mysql-config
                   key: MYSQL_DATABASE
-            # Get username from the Secret (Sensitive)
-            - name: MYSQL_USER
-              valueFrom:
-                secretKeyRef:
-                  name: mysql-secret
-                  key: MYSQL_USER            
             # Get root password from the Secret (Sensitive)
             - name: MYSQL_ROOT_PASSWORD
               valueFrom:
