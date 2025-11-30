@@ -19,7 +19,7 @@ metadata:
 type: Opaque
 data:
   DB_USERNAME: cm9vdA==	# Base64 encoded 'root'
-  DB_PASSWORD: bXlzcWxwb3Nz	# Base64 encoded 'mysqlpass'
+  DB_PASSWORD: "bXlzcWxwYXNz"	# Base64 encoded 'mysqlpass'
 ---
 apiVersion: apps/v1
 kind: Deployment
