@@ -1,0 +1,15 @@
+# 1. Use the official, minimal AL2023 base image
+FROM public.ecr.aws/amazonlinux/amazonlinux:2023
+
+# 2. Install Amazon Corretto 8 (the AL2023-compatible Java 8 JDK)
+# We use 'dnf install -y' because AL2023 uses DNF as its package manager.
+RUN dnf install -y java-1.8.0-amazon-corretto-devel \
+    && dnf clean all
+
+# 3. Set the JAVA_HOME environment variable for the application
+ENV JAVA_HOME=/usr/lib/jvm/java-1.8.0-amazon-corretto-x86_64
+
+# 4. Continue with your application steps
+EXPOSE 8080
+ADD target/crud-0.0.1-SNAPSHOT.jar app.jar
+ENTRYPOINT ["java", "-jar", "/app.jar"]
