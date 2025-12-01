@@ -1,0 +1,16 @@
+# 1. Use the official, minimal AL2023 base image
+FROM public.ecr.aws/amazonlinux/amazonlinux:2023
+
+# 2. Install Amazon Corretto 17 (the AL2023-compatible Java 17 JDK)
+# We use the 'headless' package to install the smallest JRE necessary for server applications
+RUN dnf install -y java-17-amazon-corretto-headless \
+    && dnf clean all
+
+# 3. Set the JAVA_HOME environment variable for the application
+# Note the path is now '/usr/lib/jvm/java-17-amazon-corretto'
+ENV JAVA_HOME=/usr/lib/jvm/java-17-amazon-corretto
+
+# 4. Continue with your application steps
+EXPOSE 8080
+ADD target/crud-0.0.1-SNAPSHOT.jar app.jar
+ENTRYPOINT ["java", "-jar", "/app.jar"]
