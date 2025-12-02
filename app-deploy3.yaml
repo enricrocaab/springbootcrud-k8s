@@ -1,0 +1,80 @@
+# Define the ConfigMap for non-sensitive configuration
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: springboot-config
+  labels:
+    app: springboot-crud
+data:
+  DB_HOST: mysql			# Hostname of the MySQL Service
+  DB_NAME: springCrud		  # Name of the database
+---
+# Define the Secret for sensitive credentials
+apiVersion: v1
+kind: Secret
+metadata:
+  name: springboot-secret
+  labels:
+    app: springboot-crud
+type: Opaque
+data:
+  DB_USERNAME: cm9vdA==	# Base64 encoded 'root'
+  DB_PASSWORD: "bXlzcWxwYXNz"	# Base64 encoded 'mysqlpass'
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: springboot-crud-deploy
+spec:
+  selector:
+    matchLabels:
+      app: springboot-crud
+  replicas: 3
+  template:
+    metadata:
+      labels:
+        app: springboot-crud
+    spec:
+      containers:
+        - name: springboot-crud-container
+          image: enricr/springbootcrud-k8s:2.0
+          ports:
+            - containerPort: 8080
+          env: 	# Setting Environmental Variables using ConfigMap and Secret
+            # Get DB_HOST from ConfigMap
+            - name: DB_HOST
+              valueFrom:
+                configMapKeyRef:
+                  name: springboot-config
+                  key: DB_HOST
+            # Get DB_NAME from ConfigMap
+            - name: DB_NAME
+              valueFrom:
+                configMapKeyRef:
+                  name: springboot-config
+                  key: DB_NAME
+            # Get DB_USERNAME from Secret
+            - name: DB_USERNAME
+              valueFrom:
+                secretKeyRef:
+                  name: springboot-secret
+                  key: DB_USERNAME
+            # Get DB_PASSWORD from Secret
+            - name: DB_PASSWORD
+              valueFrom:
+                secretKeyRef:
+                  name: springboot-secret
+                  key: DB_PASSWORD
+---
+apiVersion: v1 		# Kubernetes API version
+kind: Service 		# Kubernetes resource kind we are creating
+metadata: 		# Metadata of the resource kind we are creating
+  name: springboot-crud-svc
+spec:
+  selector:
+    app: springboot-crud
+  ports:
+    - protocol: "TCP"
+      port: 8080 		# Port that the service is running on in the cluster
+      targetPort: 8080 	# The port exposed by the service
+  type: NodePort 		# type of the service.
