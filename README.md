@@ -15,8 +15,8 @@ The architecture diagram can be summarized as follows:
 <img width="886" height="613" alt="image" src="https://github.com/user-attachments/assets/4f64e20f-ac88-4611-ad44-dfaf0f4e0ecf" />
 
 <br>
-
-📌  I **highly recommend** downloading and reading the **PDF document**, which explains in detail all the steps in the development of the project.
+  
+📌 I **highly recommend** downloading and reading the **PDF document**, which explains in detail all the steps in the development of the project.
 <br><br>
     
 💻   <ins>In laptop</ins>  
