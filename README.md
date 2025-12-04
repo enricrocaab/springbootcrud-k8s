@@ -2,7 +2,7 @@
 # CREATE AND DEPLOY A SPRING BOOT CRUD APP WITH DOCKER AND KUBERNETES ON AWS
 
 This project provides a comprehensive overview of developing and deploying a **Spring Boot CRUD application**. I will guide you through the entire process, including:
-1.	**Application Setup**: Creating a sample Spring Boot CRUD application.
+:gear:1.	**Application Setup**: Creating a sample Spring Boot CRUD application.
 2.	**Containerization & Orchestration Prep**: Developing the necessary configuration files, specifically the Dockerfile and Kubernetes deployment YAMLs.
 3.	**Cloud Infrastructure**: Launching an EC2 instance on AWS and installing all required deployment software (Docker, conntrack, Git, Minikube, kubectl, and Maven).
 4.	**Image Creation & Registry**: Building the Docker image for our application and pushing it to a container registry.
