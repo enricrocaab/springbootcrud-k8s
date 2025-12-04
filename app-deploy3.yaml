@@ -35,7 +35,7 @@ spec:
       labels:
         app: springboot-crud
     spec:
-      containers:
+      containers: 
         - name: springboot-crud-container
           image: enricr/springbootcrud-k8s:2.0
           ports:
