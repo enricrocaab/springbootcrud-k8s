@@ -16,7 +16,7 @@ The architecture diagram can be summarized as follows:
 
 <br><br>
   
-📌 I **highly recommend** downloading and reading the **PDF document**, which explains in detail all the steps in the development of the project.
+📌 I **highly recommend** downloading and reading the `[**PDF document**](https://github.com/enricrocaab/springbootcrud-k8s/blob/main/Create%20and%20deploy%20a%20Spring%20Boot%20CRUD%20App.pdf), which explains in detail all the steps in the development of the project.
 <br><br>
     
 💻   <ins>In laptop</ins>  
