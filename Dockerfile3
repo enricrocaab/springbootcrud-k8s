@@ -1,4 +1,4 @@
-# 1. Use the official, minimal AL2023 base image
+# 1. Use the official, minimal AL2023 base image 
 FROM public.ecr.aws/amazonlinux/amazonlinux:2023
 
 # 2. Install Amazon Corretto 17 (the AL2023-compatible Java 17 JDK)
