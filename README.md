@@ -14,14 +14,14 @@ The architecture diagram can be summarized as follows:
 <br>
 <img width="886" height="613" alt="image" src="https://github.com/user-attachments/assets/4f64e20f-ac88-4611-ad44-dfaf0f4e0ecf" />
 
-<br>
+<br><br>
   
 📌 I **highly recommend** downloading and reading the **PDF document**, which explains in detail all the steps in the development of the project.
 <br><br>
     
 💻   <ins>In laptop</ins>  
 Part I: 	Create a Spring Boot Application  
-     I.1- Run and test the MySQL connection  
+         I.1- Run and test the MySQL connection  
      I.2- Create the DB and check it  
      I.3- Create the Visual Studio project  
      I.4- Change the DB connection settings in the App  
