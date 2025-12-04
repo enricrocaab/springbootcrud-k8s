@@ -1,4 +1,4 @@
-# Define the ConfigMap for the non-sensitive username
+# Define the ConfigMap for the non-sensitive username 
 apiVersion: v1
 kind: ConfigMap
 metadata:
