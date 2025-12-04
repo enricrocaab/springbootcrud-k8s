@@ -10,14 +10,14 @@ This project provides a comprehensive overview of developing and deploying a **S
 6.	**Validation**: Finally, verifying that the deployed solution is fully functional.
 
 The architecture diagram can be summarized as follows:
-<br><br> 
+  
+<br><br>
 <img width="886" height="613" alt="image" src="https://github.com/user-attachments/assets/4f64e20f-ac88-4611-ad44-dfaf0f4e0ecf" />
 
 <br><br>
-
-I **highly recommend** downloading and reading the **PDF document**, which explains in detail all the steps in the development of the project.
+I **<span style="background-color: yellow;">highly recommend</span>** downloading and reading the **<span style="background-color: yellow;">PDF document</span>**, which explains in detail all the steps in the development of the project.
 <br><br>
-
+    
 <ins>In laptop</ins>  
 Part I: 	Create a Spring Boot Application  
      I.1- Run and test the MySQL connection  
