@@ -79,3 +79,7 @@ Possible improvements could include migrating from Minikube to a multi-node Kube
 I hope this project proves valuable to many people. For me, it served as a rewarding exercise in practicing and reviewing numerous concepts and tools.
 
     
+Enric Roca Abenza  
+
+
+  
