@@ -1,4 +1,4 @@
-# Define the ConfigMap for non-sensitive configuration
+# Define the ConfigMap for non-sensitive configuration 
 apiVersion: v1
 kind: ConfigMap
 metadata:
