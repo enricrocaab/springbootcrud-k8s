@@ -13,7 +13,7 @@ The architecture diagram can be summarized as follows:
 <br><br> 
 <img width="886" height="613" alt="image" src="https://github.com/user-attachments/assets/4f64e20f-ac88-4611-ad44-dfaf0f4e0ecf" />
 
-<br><br><br>  
+<br><br>
 
 I **highly recommend** downloading and reading the **PDF document**, which explains in detail all the steps in the development of the project.
 <br><br>
@@ -48,7 +48,7 @@ Part V:  Check that the solution works
       V.2-	Check Minikube Dashboard  
       V.3- Summary and Conclusions  
 
-
+<br><br>
 
 ## Summary and Conclusions
 This project was developed as a comprehensive tutorial, designed to allow users to practice the employed technologies and tools by following the detailed steps. All the necessary code is included within this documentation, allowing for easy copy-pasting, and is also available in the GitHub repository at https://github.com/enricrocaab/springbootcrud-k8s.
