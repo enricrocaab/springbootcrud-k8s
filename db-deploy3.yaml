@@ -19,7 +19,7 @@ metadata:
     tier: database
 type: Opaque
 data:
-  MYSQL_ROOT_PASSWORD: bXlzcWxwb3Nz 	# Base64 encoded 'mysqlpass'
+  MYSQL_ROOT_PASSWORD: bXlzcWxwYXNz 	# Base64 encoded 'mysqlpass'
 ---
 # Define a 'Persistent Volume Claim'(PVC) for Mysql Storage, dynamically provisioned by cluster
 apiVersion: v1
