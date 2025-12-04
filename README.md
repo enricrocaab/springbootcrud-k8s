@@ -68,8 +68,8 @@ For example, the MySQL pod initially entered a **CrashLoopBackOff** status becau
   
 The application pods presented their own set of problems:  
 •	Encoded Password: The encoded password issue needed correction here as well.  
-•	Insufficient Disk Space: The App pods initially showed an ImagePullBackOff status due to a lack of free disk space on the instance. This required increasing the EBS volume storage resource on AWS and extending the instance partition.    
-•	Incorrect Java Version: Once the storage issue was fixed, the pods defaulted to a CrashLoopBackOff status caused by an incompatible Java version within the Docker image.  
+•	Insufficient Disk Space: The App pods initially showed an **ImagePullBackOff** status due to a lack of free disk space on the instance. This required increasing the **EBS volume** storage resource on AWS and extending the instance partition.    
+•	Incorrect Java Version: Once the storage issue was fixed, the pods defaulted to a **CrashLoopBackOff** status caused by an incompatible Java version within the Docker image.  
 •	Connectivity Issues: Finally, after resolving connectivity issues, the web application was successfully deployed and functioned as intended.  
   
 In conclusion, completing all parts of this project served as an excellent practical exercise, providing hands-on experience with key DevOps technologies and tools.  
