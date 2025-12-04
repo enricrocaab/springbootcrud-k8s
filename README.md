@@ -20,7 +20,7 @@ The architecture diagram can be summarized as follows:
 <br><br>
     
 💻   <ins>In laptop</ins>  
-Part I: 	Create a Spring Boot Application  
+**Part I: 	Create a Spring Boot Application**  
      I.1- Run and test the MySQL connection  
      I.2- Create the DB and check it  
      I.3- Create the Visual Studio project  
@@ -28,23 +28,23 @@ Part I: 	Create a Spring Boot Application
      I.5- Create and modify project files  
      I.6- Check that the application works  
      I.7- Create the executable JAR file  
-Part II:  Create the configuration files to deploy the App  
+**Part II:  Create the configuration files to deploy the App**  
      II.1- Create the Dockerfile  
      II.2- Create the db deployment yaml file  
      II.3- Create the app deployment yaml file  
      
 :cloud:   <ins>In AWS instance</ins>    
-Part III: 	Launch an instance on AWS and install the software  
+**Part III: 	Launch an instance on AWS and install the software**  
      III.1- Launch the Linux instance on AWS  
      III.2- Install Docker, Minikube, kubectl, Git and Maven  
-Part IV: Download the files and deploy the solution  
+**Part IV: Download the files and deploy the solution**  
      IV.1- Download the files from GitHub to the instance  
      IV.2- Re-built the executable jar file in the pipeline server  
      IV.3- Create the Docker image and upload it to Docker Hub  
      IV.4-	Apply the db-deploy.yaml file  
      IV.5-	Apply the app-deploy.yaml file  
      IV.6-	Configure connectivity  
-Part V:  Check that the solution works  
+**Part V:  Check that the solution works**  
       V.1-	Test the App and values in DB   
       V.2-	Check Minikube Dashboard  
       V.3- Summary and Conclusions  
