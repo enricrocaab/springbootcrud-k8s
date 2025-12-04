@@ -11,15 +11,15 @@ This project provides a comprehensive overview of developing and deploying a **S
 
 The architecture diagram can be summarized as follows:
   
-<br><br>
+<br>
 <img width="886" height="613" alt="image" src="https://github.com/user-attachments/assets/4f64e20f-ac88-4611-ad44-dfaf0f4e0ecf" />
 
-<br>
+<br><br>
 
-:smile>:  I **highly recommend** downloading and reading the **PDF document**, which explains in detail all the steps in the development of the project.
+📌  I **highly recommend** downloading and reading the **PDF document**, which explains in detail all the steps in the development of the project.
 <br><br>
     
-<ins>In laptop</ins>  
+💻   <ins>In laptop</ins>  
 Part I: 	Create a Spring Boot Application  
      I.1- Run and test the MySQL connection  
      I.2- Create the DB and check it  
@@ -33,7 +33,7 @@ Part II:  Create the configuration files to deploy the App
      II.2- Create the db deployment yaml file  
      II.3- Create the app deployment yaml file  
      
-<ins>In AWS instance</ins>    
+:cloud:   <ins>In AWS instance</ins>    
 Part III: 	Launch an instance on AWS and install the software  
      III.1- Launch the Linux instance on AWS  
      III.2- Install Docker, Minikube, kubectl, Git and Maven  
@@ -49,7 +49,7 @@ Part V:  Check that the solution works
       V.2-	Check Minikube Dashboard  
       V.3- Summary and Conclusions  
 
-<br><br>
+<br>
 
 ## Summary and Conclusions
 This project was developed as a comprehensive tutorial, designed to allow users to practice the employed technologies and tools by following the detailed steps. All the necessary code is included within this documentation, allowing for easy copy-pasting, and is also available in the GitHub repository at https://github.com/enricrocaab/springbootcrud-k8s.
