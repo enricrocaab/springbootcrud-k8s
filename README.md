@@ -2,12 +2,12 @@
 # CREATE AND DEPLOY A SPRING BOOT CRUD APP WITH DOCKER AND KUBERNETES ON AWS
 
 This project provides a comprehensive overview of developing and deploying a **Spring Boot CRUD application**. I will guide you through the entire process, including:
-:gear:1.	**Application Setup**: Creating a sample Spring Boot CRUD application.
-2.	**Containerization & Orchestration Prep**: Developing the necessary configuration files, specifically the Dockerfile and Kubernetes deployment YAMLs.
-3.	**Cloud Infrastructure**: Launching an EC2 instance on AWS and installing all required deployment software (Docker, conntrack, Git, Minikube, kubectl, and Maven).
-4.	**Image Creation & Registry**: Building the Docker image for our application and pushing it to a container registry.
-5.	**Deployment & Troubleshooting**: Applying the Kubernetes deployment files to Minikube, systematically identifying and resolving various integration and runtime issues along the way.
-6.	**Validation**: Finally, verifying that the deployed solution is fully functional.
+1.	⚙️ **Application Setup**: Creating a sample Spring Boot CRUD application.
+2.	🔧 **Containerization & Orchestration Prep**: Developing the necessary configuration files, specifically the Dockerfile and Kubernetes deployment YAMLs.
+3.	:cloud: **Cloud Infrastructure**: Launching an EC2 instance on AWS and installing all required deployment software (Docker, conntrack, Git, Minikube, kubectl, and Maven).
+4.	🐳 **Image Creation & Registry**: Building the Docker image for our application and pushing it to a container registry.
+5.	:rocket: **Deployment & :bug: Troubleshooting**: Applying the Kubernetes deployment files to Minikube, systematically identifying and resolving various integration and runtime issues along the way.
+6.	👀 **Validation**: Finally, verifying that the deployed solution is fully functional.
 
 The architecture diagram can be summarized as follows:
   
